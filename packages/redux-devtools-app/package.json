@@ -64,7 +64,7 @@
     "react-redux": "^7.2.6",
     "redux": "^4.1.2",
     "redux-persist": "^6.0.0",
-    "socketcluster-client": "^14.3.2"
+    "socketcluster-client": "^16.0.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
@@ -85,7 +85,7 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "@types/react-redux": "^7.1.22",
-    "@types/socketcluster-client": "^13.0.5",
+    "@types/socketcluster-client": "^16.0.0",
     "@types/styled-components": "^5.1.22",
     "@types/testing-library__jest-dom": "^5.14.2",
     "@types/webpack-env": "^1.16.3",

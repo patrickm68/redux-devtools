@@ -4842,7 +4842,7 @@ __metadata:
     "@types/react": ^17.0.39
     "@types/react-dom": ^17.0.11
     "@types/react-redux": ^7.1.22
-    "@types/socketcluster-client": ^13.0.5
+    "@types/socketcluster-client": ^16.0.0
     "@types/styled-components": ^5.1.22
     "@types/testing-library__jest-dom": ^5.14.2
     "@types/webpack-env": ^1.16.3
@@ -4876,7 +4876,7 @@ __metadata:
     redux: ^4.1.2
     redux-persist: ^6.0.0
     rimraf: ^3.0.2
-    socketcluster-client: ^14.3.2
+    socketcluster-client: ^16.0.4
     style-loader: ^3.3.1
     styled-components: ^5.3.3
     ts-jest: ^27.1.3
@@ -4947,7 +4947,7 @@ __metadata:
     "@types/react": ^17.0.39
     "@types/semver": ^7.3.9
     "@types/socketcluster": ^14.0.4
-    "@types/socketcluster-client": ^13.0.5
+    "@types/socketcluster-client": ^16.0.0
     "@types/socketcluster-server": ^14.2.6
     "@types/styled-components": ^5.1.22
     "@types/supertest": ^2.0.11
@@ -4979,7 +4979,7 @@ __metadata:
     rimraf: ^3.0.2
     semver: ^7.3.5
     socketcluster: ^14.4.2
-    socketcluster-client: ^14.3.2
+    socketcluster-client: ^16.0.4
     sqlite3: ^5.0.2
     styled-components: ^5.3.3
     supertest: ^6.2.2
@@ -5340,7 +5340,7 @@ __metadata:
     "@redux-devtools/utils": ^1.2.0
     "@types/jsan": ^3.1.2
     "@types/rn-host-detect": ^1.2.0
-    "@types/socketcluster-client": ^13.0.5
+    "@types/socketcluster-client": ^16.0.0
     "@typescript-eslint/eslint-plugin": ^5.10.2
     "@typescript-eslint/parser": ^5.10.2
     eslint: ^8.8.0
@@ -5350,7 +5350,7 @@ __metadata:
     redux: ^4.1.2
     rimraf: ^3.0.2
     rn-host-detect: ^1.2.0
-    socketcluster-client: ^14.3.2
+    socketcluster-client: ^16.0.4
     typescript: ~4.5.5
   peerDependencies:
     redux: ^3.5.2 || ^4.0.0
@@ -7019,10 +7019,53 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ag-auth@npm:*":
+  version: 1.0.0
+  resolution: "@types/ag-auth@npm:1.0.0"
+  dependencies:
+    "@types/jsonwebtoken": "*"
+  checksum: cd8c577d95150a1cd53d31e502f279e0844f82174a2017cd340b7e054a637947bf7d9278347b6869cc25a81ab88dff774064d9e32ff226908136de0da3de7a0c
+  languageName: node
+  linkType: hard
+
+"@types/ag-channel@npm:*":
+  version: 5.0.0
+  resolution: "@types/ag-channel@npm:5.0.0"
+  dependencies:
+    "@types/consumable-stream": "*"
+    "@types/stream-demux": "*"
+    "@types/writable-consumable-stream": "*"
+  checksum: 14ec9cb5dbee54e100743ef4408e827beb0a7374f6b9c46ca7f6e6e8b1426c4d8853b8e103e032642283ca1833cb376157ad0127ad158e903d40a3a21dc63b8f
+  languageName: node
+  linkType: hard
+
+"@types/ag-simple-broker@npm:*":
+  version: 5.0.0
+  resolution: "@types/ag-simple-broker@npm:5.0.0"
+  dependencies:
+    "@types/ag-channel": "*"
+    "@types/async-stream-emitter": "*"
+    "@types/consumable-stream": "*"
+    "@types/socketcluster-server": "*"
+    "@types/writable-consumable-stream": "*"
+  checksum: c7455df6b61e1f91d6093f0e08191f7b09b675b0a2e4c3fd7eb45ccfb82ecdd92fe020f6f86898ed74393121b7371f6c23c1112fc4af38da94d8762135d69d5f
+  languageName: node
+  linkType: hard
+
 "@types/aria-query@npm:^4.2.0":
   version: 4.2.2
   resolution: "@types/aria-query@npm:4.2.2"
   checksum: 6f2ce11d91e2d665f3873258db19da752d91d85d3679eb5efcdf9c711d14492287e1e4eb52613b28e60375841a9e428594e745b68436c963d8bad4bf72188df3
+  languageName: node
+  linkType: hard
+
+"@types/async-stream-emitter@npm:*":
+  version: 4.0.0
+  resolution: "@types/async-stream-emitter@npm:4.0.0"
+  dependencies:
+    "@types/consumable-stream": "*"
+    "@types/writable-consumable-stream": "*"
+  checksum: 0cbaf1ec195a496db3291c4ff112dee1a1728581cb4ead021de88147505db9e3785fc87942c27bb9412407ef200c0fc803486fe8282bb321db23cfc57670615b
   languageName: node
   linkType: hard
 
@@ -7199,6 +7242,15 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: fe81351470f2d3165e8b12ce33542eef89ea893e36dd62e8f7d72566dfb7e448376ae962f9f3ea888547ce8b55a40020ca0e01d637fab5d99567673084542641
+  languageName: node
+  linkType: hard
+
+"@types/consumable-stream@npm:*":
+  version: 2.0.0
+  resolution: "@types/consumable-stream@npm:2.0.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: b0421b8142981d383d33e845a659340dc6b5e8119ec026c8401b5bdba0208e8cc4d8be9ed678480c800d43c44a53356f9265f82bcd9b00735b491d429beec187
   languageName: node
   linkType: hard
 
@@ -8082,17 +8134,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/socketcluster-client@npm:^13.0.5":
-  version: 13.0.5
-  resolution: "@types/socketcluster-client@npm:13.0.5"
+"@types/socketcluster-client@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "@types/socketcluster-client@npm:16.0.0"
   dependencies:
-    "@types/component-emitter": "*"
-    "@types/sc-auth": "*"
-    "@types/sc-channel": ^1
+    "@types/ag-channel": "*"
+    "@types/async-stream-emitter": "*"
+    "@types/consumable-stream": "*"
     "@types/sc-errors": "*"
-    "@types/socketcluster-server": ^14
+    "@types/socketcluster-server": "*"
+    "@types/stream-demux": "*"
+    "@types/writable-consumable-stream": "*"
     "@types/ws": "*"
-  checksum: 69a396f4e02ff6154a8eb580137eaebcd7389ef179f34ff55c3397040ed0e9c0ddadb870bb528409c472c0b8cd0e2c92a146c4b7b2bb4cc7b054722c71131bd2
+  checksum: 33a0b9d3de9cc37ba8f8d1241681615eee21fab1faa1c8e575398b32a98b187331c670b1d3b11f246fc68c377e2cf9ebda47cebb1bcc4c38874e0e588029a6a9
+  languageName: node
+  linkType: hard
+
+"@types/socketcluster-server@npm:*":
+  version: 16.1.0
+  resolution: "@types/socketcluster-server@npm:16.1.0"
+  dependencies:
+    "@types/ag-auth": "*"
+    "@types/ag-simple-broker": "*"
+    "@types/async-stream-emitter": "*"
+    "@types/consumable-stream": "*"
+    "@types/jsonwebtoken": "*"
+    "@types/sc-errors": "*"
+    "@types/stream-demux": "*"
+    "@types/writable-consumable-stream": "*"
+    "@types/ws": "*"
+  checksum: 71e1f49bd97527d5868f07ddaff9090f726430708c5dfc7c1baa56f13caa5031e1219ca225c24d3a922c240120ab149ead762d8839a748792646bf5f05534dcf
   languageName: node
   linkType: hard
 
@@ -8147,6 +8218,16 @@ __metadata:
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 205fdbe3326b7046d7eaf5e494d8084f2659086a266f3f9cf00bccc549c8e36e407f88168ad4383c8b07099957ad669f75f2532ed4bc70be2b037330f7bae019
+  languageName: node
+  linkType: hard
+
+"@types/stream-demux@npm:*":
+  version: 8.0.0
+  resolution: "@types/stream-demux@npm:8.0.0"
+  dependencies:
+    "@types/consumable-stream": "*"
+    "@types/writable-consumable-stream": "*"
+  checksum: e55c241db082b204005b84ecd9eb83192188130cab6e21eea9e9baeba186bad1a49b9a70f065db84d281917de0961c45a03d9f0e384cdaf4f5a33aa3218191f3
   languageName: node
   linkType: hard
 
@@ -8273,6 +8354,15 @@ __metadata:
     anymatch: ^3.0.0
     source-map: ^0.6.0
   checksum: e594a1357cbbc2f7c6ca47785c5a11adb5591a774a69afaeab07cd6f6bff6c6aea2030bd37b32bdd19d0ec2336a346db754e8d8d236ba8effeab542716fb32b7
+  languageName: node
+  linkType: hard
+
+"@types/writable-consumable-stream@npm:*":
+  version: 2.0.0
+  resolution: "@types/writable-consumable-stream@npm:2.0.0"
+  dependencies:
+    "@types/consumable-stream": "*"
+  checksum: c1cf519ff07a72b725968c55bdde17bc1664bff9d5a72a90db885e369ea37e196fc36f36fbd2d670d573055c8c7debf233263ce6743cc308e384c51231a1c1d1
   languageName: node
   linkType: hard
 
@@ -8979,6 +9069,24 @@ __metadata:
   version: 1.1.2
   resolution: "address@npm:1.1.2"
   checksum: d966deee6ab9a0f96ed1d25dc73e91a248f64479c91f9daeb15237b8e3c39a02faac4e6afe8987ef9e5aea60a1593cef5882b7456ab2e6196fc0229a93ec39c2
+  languageName: node
+  linkType: hard
+
+"ag-channel@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "ag-channel@npm:5.0.0"
+  dependencies:
+    consumable-stream: ^2.0.0
+  checksum: d9f35a80791487104c1506415ad23f18d983ed1151fc49140800bfef34b9d8688d41b49d847df662402bf18a00205d3a7fe34afd9a0f2e6a42787fe48cb2b964
+  languageName: node
+  linkType: hard
+
+"ag-request@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "ag-request@npm:1.0.0"
+  dependencies:
+    sc-errors: ^2.0.0
+  checksum: de0c96caee9b9e59afc6f8a7f5647680e37636000d4dba0a25c0fea58626aed292a2f15c5dcea7cd743acd27674a2663886105824fd083d66baf6805afa24575
   languageName: node
   linkType: hard
 
@@ -9735,6 +9843,15 @@ __metadata:
   dependencies:
     retry: 0.13.1
   checksum: 38a7152ff7265a9321ea214b9c69e8224ab1febbdec98efbbde6e562f17ff68405569b796b1c5271f354aef8783665d29953f051f68c1fc45306e61aec82fdc4
+  languageName: node
+  linkType: hard
+
+"async-stream-emitter@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "async-stream-emitter@npm:4.0.0"
+  dependencies:
+    stream-demux: ^8.0.0
+  checksum: 4d0173da905d7f410e75c7ec81592bb27a0b1aba32a070aac881f55f9df866d53bfafc4400b18f3736772320a7f8eecbc269fbda2a120466065669daa80ca979
   languageName: node
   linkType: hard
 
@@ -11308,13 +11425,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clone@npm:2.1.1":
-  version: 2.1.1
-  resolution: "clone@npm:2.1.1"
-  checksum: 70686162e82096fb515f1506c21d6f07b5a033829360a0849984134fe1f28576e8864c14c1cabe941bc122838ca026af6e966edbcea70976ddaae054841a378d
-  languageName: node
-  linkType: hard
-
 "clone@npm:^1.0.2":
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
@@ -11745,6 +11855,13 @@ __metadata:
   version: 1.0.0
   resolution: "constants-browserify@npm:1.0.0"
   checksum: f7ac8c6d0b6e4e0c77340a1d47a3574e25abd580bfd99ad707b26ff7618596cf1a5e5ce9caf44715e9e01d4a5d12cb3b4edaf1176f34c19adb2874815a56e64f
+  languageName: node
+  linkType: hard
+
+"consumable-stream@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "consumable-stream@npm:2.0.0"
+  checksum: 35d25bcdcb6a577beb57b9ceebf1ee21d905874113b1a7e76a00b678aa2eefe5ccf4d15429e41ad05e0fba813d14f3c6d98081ddcf4e9f19c978e63bf0692263
   languageName: node
   linkType: hard
 
@@ -18808,7 +18925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"linked-list@npm:0.1.0":
+"linked-list@npm:^0.1.0":
   version: 0.1.0
   resolution: "linked-list@npm:0.1.0"
   checksum: 4fb4b174796c8f4e8aec6ef55982bb48010284809bc44ade922c88360af8278121cc9426f9e506b1d93504179d0cf94c1fd49f867009522f8862e15977d4aca8
@@ -24487,14 +24604,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sc-errors@npm:^2.0.1":
+"sc-errors@npm:^2.0.0, sc-errors@npm:^2.0.1":
   version: 2.0.1
   resolution: "sc-errors@npm:2.0.1"
   checksum: fce30f3e5f182ec20d8d6f508cede3872d6e39a4d0d09b52b570aa8d4d91751da0566b7971672a48be8b340d53e922381fadc27bda040882f71596ec13a6cced
   languageName: node
   linkType: hard
 
-"sc-formatter@npm:^3.0.1, sc-formatter@npm:^3.0.2, sc-formatter@npm:~3.0.1":
+"sc-formatter@npm:^3.0.2, sc-formatter@npm:~3.0.1":
   version: 3.0.2
   resolution: "sc-formatter@npm:3.0.2"
   checksum: d589706dbf0df42fa64a37d94c2bf415385dd5bcc279480a4aa663cc4b983fc3ce1e9ef4d0771f802de22dfc1d0212710aa858fd39c0b1deb568819463dfab19
@@ -25102,21 +25219,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socketcluster-client@npm:^14.3.2":
-  version: 14.3.2
-  resolution: "socketcluster-client@npm:14.3.2"
+"socketcluster-client@npm:^16.0.4":
+  version: 16.0.4
+  resolution: "socketcluster-client@npm:16.0.4"
   dependencies:
+    ag-channel: ^5.0.0
+    ag-request: ^1.0.0
+    async-stream-emitter: ^4.0.0
     buffer: ^5.2.1
-    clone: 2.1.1
-    component-emitter: 1.2.1
-    linked-list: 0.1.0
-    querystring: 0.2.0
-    sc-channel: ^1.2.0
+    clone-deep: ^4.0.1
+    linked-list: ^0.1.0
+    querystring: ^0.2.0
     sc-errors: ^2.0.1
-    sc-formatter: ^3.0.1
-    uuid: 3.2.1
-    ws: ^7.5.0
-  checksum: 819e4cbf6874ddf2912474fa807e8f38527da3a4081871ad69a65f4db67200ddc609770b3cb033d5b49dbd1a9949ef1871f079a843cbb76ee31f981e00bec479
+    sc-formatter: ^3.0.2
+    stream-demux: ^8.0.0
+    uuid: ^3.2.1
+    ws: ^7.4.6
+  checksum: c949c1d898e0d3faac0003f0d08ca31ee82a30412233052b1f0acb86d5063b78995d097d485d00bbaa681dac35cd36c0e3292c6376c37f0221c2cc8f148b19ca
   languageName: node
   linkType: hard
 
@@ -25562,6 +25681,16 @@ __metadata:
     inherits: ~2.0.1
     readable-stream: ^2.0.2
   checksum: 8de7bcab5582e9a931ae1a4768be7efe8fa4b0b95fd368d16d8cf3e494b897d6b0a7238626de5d71686e53bddf417fd59d106cfa3af0ec055f61a8d1f8fc77b3
+  languageName: node
+  linkType: hard
+
+"stream-demux@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "stream-demux@npm:8.0.0"
+  dependencies:
+    consumable-stream: ^2.0.0
+    writable-consumable-stream: ^2.0.0
+  checksum: bb80941f9a8ee21e42c4275869766a624ef2b10f30cb720d970d6bb1c684b058ef1c70e05224c77624e44d25773f2d23f3dcfb6b32b64258ecceb86caf3004b4
   languageName: node
   linkType: hard
 
@@ -27626,7 +27755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^3.3.2":
+"uuid@npm:^3.2.1, uuid@npm:^3.3.2":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
@@ -28378,6 +28507,15 @@ __metadata:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 159da4805f7e84a3d003d8841557196034155008f817172d4e986bd591f74aa82aa7db55929a54222309e01079a65a92a9e6414da5a6aa4b01ee44a511ac3ee5
+  languageName: node
+  linkType: hard
+
+"writable-consumable-stream@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "writable-consumable-stream@npm:2.0.0"
+  dependencies:
+    consumable-stream: ^2.0.0
+  checksum: bd035528c45bca14672d1c35928615ed90fc0416624e8f5886e9e3c5e6b829f4fbff27b3f7f6b6d8dbf3557fcd2c205ab7aac553cd68ec9ca42eb820201e6f8e
   languageName: node
   linkType: hard
 
